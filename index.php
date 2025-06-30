@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Guatemala');
 
 require_once dirname(__FILE__)."/include/smarty.php";
 require_once dirname(__FILE__) ."/include/database.php";

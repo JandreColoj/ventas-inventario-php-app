@@ -1,9 +1,9 @@
 <?php 
 if(!defined("DATABASE_HOST")){
-define("DATABASE_DRIVER","mysql");//oci8
-define("DATABASE_HOST","127.0.0.1");
-define("DATABASE_USER","root");
-define("DATABASE_PASSWD","");
-define("DATABASE_NAME","tienda24");
+define("DATABASE_DRIVER","mysqli");//oci8
+define("DATABASE_HOST","db");
+define("DATABASE_USER","user");
+define("DATABASE_PASSWD","pass");
+define("DATABASE_NAME","proyecto");
 }
 ?>

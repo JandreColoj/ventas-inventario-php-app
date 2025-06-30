@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.20, created on 2016-01-08 13:58:41
+<?php /* Smarty version 2.6.20, created on 2025-06-30 04:57:58
          compiled from formProductos.html.tpl */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,8 +60,7 @@ $this->_sections['listaValores']['last']       = ($this->_sections['listaValores
                         <tr>
                             <td>CÓDIGO: </td>
                             <td colspan="2" class="form-group has-error">
-                                <input pattern="[0-9]{<?php echo 5; ?>
-}" title="inserte los 5 números del UPC" name="codigo" maxlength="5" required class="form-control input-sm" placeholder="UPC" value="<?php echo $this->_tpl_vars['producto'][$this->_sections['listaValores']['index']]['codigo_producto']; ?>
+                                <input  title="inserte UPC" name="codigo" maxlength="15" required class="form-control input-sm" placeholder="UPC" value="<?php echo $this->_tpl_vars['producto'][$this->_sections['listaValores']['index']]['codigo_producto']; ?>
 ">
                             </td>
                         </tr>
@@ -73,14 +72,14 @@ $this->_sections['listaValores']['last']       = ($this->_sections['listaValores
                             </td>
                         </tr>
                         <tr>
-                            <td>$ UNITARIO </td>
+                            <td>UNITARIO Q </td>
                             <td class="form-group has-error">
                                 <input pattern="[0-9]+.[0-9]" title="Ejemplo 43.0" name="preciou" maxlength="5" required class="form-control input-sm" placeholder="Precio unitario" value="<?php echo $this->_tpl_vars['producto'][$this->_sections['listaValores']['index']]['precio_u']; ?>
 ">
                             </td>
                         </tr>
                         <tr>
-                            <td>$ VENTA </td>
+                            <td>VENTA Q </td>
                             <td class="form-group has-error">
                                 <input pattern="[0-9]+.[0-9]" title="Ejemplo 43.0" name="preciov" maxlength="5" required class="form-control input-sm" placeholder="Precio venta" value="<?php echo $this->_tpl_vars['producto'][$this->_sections['listaValores']['index']]['precio']; ?>
 ">

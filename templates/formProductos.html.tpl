@@ -32,7 +32,7 @@
                         <tr>
                             <td>CÓDIGO: </td>
                             <td colspan="2" class="form-group has-error">
-                                <input pattern="[0-9]{ldelim}{5}{rdelim}" title="inserte los 5 números del UPC" name="codigo" maxlength="5" required class="form-control input-sm" placeholder="UPC" value="{$producto[listaValores].codigo_producto}">
+                                <input  title="inserte UPC" name="codigo" maxlength="15" required class="form-control input-sm" placeholder="UPC" value="{$producto[listaValores].codigo_producto}">
                             </td>
                         </tr>
                         <tr>
@@ -42,13 +42,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>$ UNITARIO </td>
+                            <td>UNITARIO Q </td>
                             <td class="form-group has-error">
                                 <input pattern="[0-9]+.[0-9]" title="Ejemplo 43.0" name="preciou" maxlength="5" required class="form-control input-sm" placeholder="Precio unitario" value="{$producto[listaValores].precio_u}">
                             </td>
                         </tr>
                         <tr>
-                            <td>$ VENTA </td>
+                            <td>VENTA Q </td>
                             <td class="form-group has-error">
                                 <input pattern="[0-9]+.[0-9]" title="Ejemplo 43.0" name="preciov" maxlength="5" required class="form-control input-sm" placeholder="Precio venta" value="{$producto[listaValores].precio}">
                             </td>
@@ -56,7 +56,7 @@
                         <tr>
                             <td>DESCRIPCIÓN: </td>
                             <td colspan="4" class="form-group has-success">
-                                <textarea class="form-control input-sm" rows="3" name="descripcion" maxlength="50" placeholder="">{$producto[listaValores].descripcion}</textarea>
+                                <textarea class="form-coRntrol input-sm" rows="3" name="descripcion" maxlength="50" placeholder="">{$producto[listaValores].descripcion}</textarea>
                                 <span class="help-block">Otras especificaciones que ayuden a describir el producto</span>
                             </td>
                         </tr>
