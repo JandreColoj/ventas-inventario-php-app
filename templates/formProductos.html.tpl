@@ -31,44 +31,44 @@
                         <input type="hidden" name="id" value="{$id}">
                         <tr>
                             <td>CÓDIGO: </td>
-                            <td colspan="2" class="form-group has-error">
-                                <input  title="inserte UPC" name="codigo" maxlength="15" required class="form-control input-sm" placeholder="UPC" value="{$producto[listaValores].codigo_producto}">
+                            <td colspan="2" class="form-group">
+                                <input  title="UPC" name="codigo" maxlength="15" required class="form-control input-sm" placeholder="inserte código de producto" value="{$producto[listaValores].codigo_producto}">
                             </td>
                         </tr>
                         <tr>
                             <td>NOMBRE: </td>
-                            <td colspan="4" class="form-group has-error">
+                            <td colspan="4" class="form-group">
                                 <input type="text" name="nombre" maxlength="35" required class="form-control input-sm" placeholder="nombre producto" value="{$producto[listaValores].nombre_producto}">
                             </td>
                         </tr>
                         <tr>
                             <td>UNITARIO Q </td>
-                            <td class="form-group has-error">
+                            <td class="form-group">
                                 <input pattern="[0-9]+.[0-9]" title="Ejemplo 43.0" name="preciou" maxlength="5" required class="form-control input-sm" placeholder="Precio unitario" value="{$producto[listaValores].precio_u}">
                             </td>
                         </tr>
                         <tr>
                             <td>VENTA Q </td>
-                            <td class="form-group has-error">
+                            <td class="form-group">
                                 <input pattern="[0-9]+.[0-9]" title="Ejemplo 43.0" name="preciov" maxlength="5" required class="form-control input-sm" placeholder="Precio venta" value="{$producto[listaValores].precio}">
                             </td>
                         </tr>
+     
                         <tr>
                             <td>DESCRIPCIÓN: </td>
-                            <td colspan="4" class="form-group has-success">
-                                <textarea class="form-coRntrol input-sm" rows="3" name="descripcion" maxlength="50" placeholder="">{$producto[listaValores].descripcion}</textarea>
-                                <span class="help-block">Otras especificaciones que ayuden a describir el producto</span>
+                            <td colspan="2" class="form-group has-success">
+                                <textarea class="form-control input-sm" rows="2" name="descripcion" maxlength="50" placeholder="Describe el producto">{$producto[listaValores].descripcion}</textarea>
                             </td>
                         </tr>
                         <tr>
                             <td>STOCK: </td>
-                            <td class="form-group has-error">
+                            <td class="form-group">
                                 <input type="number" name="existencias" min="1" max="100" class="form-control input-sm" required placeholder="existencias" value="{$producto[listaValores].existencias_prod}">
                             </td>
                         </tr>
                         <tr>
                             <td>DEPTO: </td>
-                            <td class="form-group has-error">
+                            <td class="form-group">
                                 <select class="form-control input-sm" name="departamento" required>
                                     {section name=datosDepartamento loop="$datosdept"}
                                     <option value="{$datosdept[datosDepartamento].id_departamento}" selected>{$datosdept[datosDepartamento].nombre_dept}</option>

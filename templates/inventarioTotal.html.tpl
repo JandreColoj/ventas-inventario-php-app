@@ -1,11 +1,8 @@
-<?php /* Smarty version 2.6.20, created on 2025-07-01 00:15:22
-         compiled from inventarioTotal.html.tpl */ ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title><?php echo $this->_tpl_vars['t']; ?>
-</title>
+    <title>{$t}</title>
 </head>
 <body>
     <div class="panel panel-info" style="margin-top: 150px;">
@@ -46,26 +43,17 @@
                                 </thead>
 
                                 <tbody>
-                                    <?php $_from = $this->_tpl_vars['productos']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
-    foreach ($_from as $this->_tpl_vars['prod']):
-?>
+                                    {foreach from=$productos item=prod}
                                     <tr>
-                                        <td><?php echo $this->_tpl_vars['prod']['codigo_producto']; ?>
-</td>
-                                        <td><?php echo $this->_tpl_vars['prod']['nombre_producto']; ?>
-</td>
-                                        <td><?php echo $this->_tpl_vars['prod']['descripcion']; ?>
-</td>
-                                        <td><?php echo $this->_tpl_vars['prod']['existencias_prod']; ?>
-</td>
-                                        <td><?php echo $this->_tpl_vars['prod']['id_departamento']; ?>
-</td>
-                                        <td><?php echo $this->_tpl_vars['prod']['precio_u']; ?>
-</td>
-                                        <td><?php echo $this->_tpl_vars['prod']['precio']; ?>
-</td>
+                                        <td>{$prod.codigo_producto}</td>
+                                        <td>{$prod.nombre_producto}</td>
+                                        <td>{$prod.descripcion}</td>
+                                        <td>{$prod.existencias_prod}</td>
+                                        <td>{$prod.id_departamento}</td>
+                                        <td>{$prod.precio_u}</td>
+                                        <td>{$prod.precio}</td>
                                     </tr>
-                                    <?php endforeach; endif; unset($_from); ?>
+                                    {/foreach}
                                 </tbody>
 
                                 <tfoot>

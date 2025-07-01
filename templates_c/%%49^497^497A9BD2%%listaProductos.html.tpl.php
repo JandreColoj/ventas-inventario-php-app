@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.20, created on 2016-01-11 23:29:16
+<?php /* Smarty version 2.6.20, created on 2025-06-30 23:59:53
          compiled from listaProductos.html.tpl */ ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -85,11 +85,11 @@ $this->_sections['listaProductos']['last']       = ($this->_sections['listaProdu
 </td>
                                         <td><?php echo $this->_tpl_vars['productos'][$this->_sections['listaProductos']['index']]['precio']; ?>
 </td>
-                                        <td><a href="formProductosController.php?id=<?php echo $this->_tpl_vars['productos'][$this->_sections['listaProductos']['index']]['idproducto']; ?>
+                                        <td><a href="formProductosController.php?id=<?php echo $this->_tpl_vars['productos'][$this->_sections['listaProductos']['index']]['id']; ?>
 " data-target="#myModal" data-toggle="modal" class="btn btn-warning"><i class="fa fa-pencil"></i> Editar</a>
                                         </td>
                                         <td>
-                                            <a href="accionProducto.php?id=<?php echo $this->_tpl_vars['productos'][$this->_sections['listaProductos']['index']]['idproducto']; ?>
+                                            <a href="accionProducto.php?id=<?php echo $this->_tpl_vars['productos'][$this->_sections['listaProductos']['index']]['id']; ?>
 " onclick="return confirm('Seguro que desea eliminar este producto')" class="btn btn-danger">
                                                 <i class="fa fa-trash-o fa-lg"></i> Eliminar</a>
                                         </td>

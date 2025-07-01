@@ -52,10 +52,10 @@
                                         <td>{$productos[listaProductos].id_departamento}</td>
                                         <td>{$productos[listaProductos].precio_u}</td>
                                         <td>{$productos[listaProductos].precio}</td>
-                                        <td><a href="formProductosController.php?id={$productos[listaProductos].idproducto}" data-target="#myModal" data-toggle="modal" class="btn btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+                                        <td><a href="formProductosController.php?id={$productos[listaProductos].id}" data-target="#myModal" data-toggle="modal" class="btn btn-warning"><i class="fa fa-pencil"></i> Editar</a>
                                         </td>
                                         <td>
-                                            <a href="accionProducto.php?id={$productos[listaProductos].idproducto}" onclick="return confirm('Seguro que desea eliminar este producto')" class="btn btn-danger">
+                                            <a href="accionProducto.php?id={$productos[listaProductos].id}" onclick="return confirm('Seguro que desea eliminar este producto')" class="btn btn-danger">
                                                 <i class="fa fa-trash-o fa-lg"></i> Eliminar</a>
                                         </td>
                                     </tr>

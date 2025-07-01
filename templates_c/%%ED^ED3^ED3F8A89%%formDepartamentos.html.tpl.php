@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.20, created on 2016-01-08 12:55:12
+<?php /* Smarty version 2.6.20, created on 2025-07-01 00:07:26
          compiled from formDepartamentos.html.tpl */ ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,17 +59,16 @@ $this->_sections['listaValores']['last']       = ($this->_sections['listaValores
 ">
                         <tr>
                             <td>NOMBRE: </td>
-                            <td colspan="4" class="form-group has-error">
+                            <td colspan="4" class="form-group">
                                 <input type="text" name="nombre" maxlength="35" required class="form-control input-sm" placeholder="nombre departamento" value="<?php echo $this->_tpl_vars['departamento'][$this->_sections['listaValores']['index']]['nombre_dept']; ?>
 ">
                             </td>
                         </tr>
                         <tr>
                             <td>DESCRIPCIÓN: </td>
-                            <td colspan="4" class="form-group has-success">
-                                <textarea class="form-control input-sm" rows="3" name="descripcion" maxlength="150"><?php echo $this->_tpl_vars['departamento'][$this->_sections['listaValores']['index']]['descripcion_dept']; ?>
-</textarea>
-                                <span class="help-block">Otras especificaciones que ayuden a describir el departamento</span>
+                            <td colspan="4" class="form-group">
+                                <input type="text" class="form-control input-sm" name="descripcion" maxlength="150" value="<?php echo $this->_tpl_vars['departamento'][$this->_sections['listaValores']['index']]['descripcion_dept']; ?>
+"></input> 
                             </td>
                         </tr>
                     </table>

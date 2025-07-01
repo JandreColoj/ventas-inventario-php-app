@@ -31,15 +31,14 @@
                         <input type="hidden" name="id" value="{$id}">
                         <tr>
                             <td>NOMBRE: </td>
-                            <td colspan="4" class="form-group has-error">
+                            <td colspan="4" class="form-group">
                                 <input type="text" name="nombre" maxlength="35" required class="form-control input-sm" placeholder="nombre departamento" value="{$departamento[listaValores].nombre_dept}">
                             </td>
                         </tr>
                         <tr>
                             <td>DESCRIPCIÓN: </td>
-                            <td colspan="4" class="form-group has-success">
-                                <textarea class="form-control input-sm" rows="3" name="descripcion" maxlength="150">{$departamento[listaValores].descripcion_dept}</textarea>
-                                <span class="help-block">Otras especificaciones que ayuden a describir el departamento</span>
+                            <td colspan="4" class="form-group">
+                                <input type="text" class="form-control input-sm" name="descripcion" maxlength="150" value="{$departamento[listaValores].descripcion_dept}"></input> 
                             </td>
                         </tr>
                     </table>
